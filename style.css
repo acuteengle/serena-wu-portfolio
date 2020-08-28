@@ -1,5 +1,5 @@
 /* Side Navbar styling */
-
+/* 
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -250px;
@@ -7,10 +7,11 @@
     #sidebar.active {
         margin-left: 0;
     }
-}
+} */
 
 .wrapper {
     margin-top: 25px;
+    width:100%;
     display: flex;
     align-items: stretch;
 }
@@ -21,21 +22,21 @@
     min-height: 100vh;
 }
 
-#sidebar.active {
+/* #sidebar.active {
     margin-left: -250px;
 }
 
 a[data-toggle="collapse"] {
     position: relative;
-}
+} */
 
-.dropdown-toggle::after {
+/* .dropdown-toggle::after {
     display: block;
     position: absolute;
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-}
+} */
 
 li a, a:hover, a:focus {
     color: inherit;
@@ -136,7 +137,7 @@ a:link, a:visited {
 
 .content-container {
     width: 100%;
-    margin: 20px 0px;
+    margin-bottom: 40px;
 }
 
 .content{
@@ -206,6 +207,11 @@ a:link, a:visited {
     width: 100%;
     border: 1px solid #22A8A8; 
     margin: 10px 0px
+}
+
+.tile-item a {
+    color: black;
+    text-decoration: none;
 }
 
 /* .tile-item img:hover {
@@ -295,4 +301,94 @@ a:link, a:visited {
 .bullet-journal-container div a img{
     width: 100%;
     border: 1px solid #22A8A8;
+}
+
+
+/* Coloring Book page */
+
+.art-to-greyscale {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.greyscale-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.greyscale-container .greyscale-image {
+    width: 20%;
+}
+
+.greyscale-container .greyscale-image img{
+    width: 100%;
+}
+
+.greyscale-container .greyscale-text {
+    width: 75%;
+}
+
+.other-figma-images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other-figma-images-container div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.other-figma-images-container div a{
+    width: 45%;
+}
+
+.other-figma-images-container div a img{
+    width: 100%;
+}
+
+
+/* Video Editing page */
+
+.video-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.video-content p {
+    margin: 10px 0px;
+}
+
+/* Contact page */
+.contact-form {
+    width: 80%;
+    margin: auto;
+}
+.contact-form form{
+    width: 100%;
+}
+
+.contact-form p{
+    margin-top: 20px;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-media-icons a {
+    margin: 0px 5px;
+    color: #22A8A8;
 }

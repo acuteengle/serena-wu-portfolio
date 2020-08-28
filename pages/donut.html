@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Serena Wu</title>
+    <link rel="icon" href="../images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../lightbox/css/lightbox.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Nav Bar -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <a href="../index.html"><p id="name">Serena Wu</p></a>
+          <ul class="list-unstyled components">
+            <li>
+              <a href="./about.html">About</a>
+            </li>
+            <li>
+              <a href="./resume.html">Resume</a>
+            </li>
+            <li>
+              <a href="./Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="list-unstyled components">
+          <p class="navbar-heading">WORK</p>
+          <li>
+            <a href="./yield.html">Increased Yield for Creatives Case Study</a>
+          </li>
+          <li>
+            <a href="./process.html">Optimize Creative Procresses</a>
+          </li>
+          <li>
+            <a href="./donut.html" class="active-link"
+              >Donut Hotspotting in Long Beach
+            </a>
+          </li>
+          <li>
+            <a href="./bulletJournal.html">Bullet Journal Spreads</a>
+          </li>
+          <li>
+            <a href="./coloringBook.html">Coloring Book</a>
+          </li>
+          <li>
+            <a href="./videoEditing.html">Video Editing</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content -->
+      <div class="content-container">
+        <div class="content">
+          <h1 class="page-title">
+            Donut Hotspotting in Long Beach (with Yelp’s Help)
+          </h1>
+          <h2 class="section-header">CHALLENGE</h2>
+          <p>
+            Pink Box Stories aims to share stories focusing on entrepreneurship
+            through the lens of donut shops. One of my projects was to create a
+            single map and database of independent donut shops in Long Beach, a
+            prime location for donut shops.
+          </p>
+          <hr class="divider" />
+          <h2 class="section-header">PROCESS</h2>
+          <p>
+            As a starting point, I enlisted the help of Yelp’s API. (An API
+            stands for “application program interface”; with limits, it allows
+            us to access Yelp’s data and tweak it for our specific purpose.) I
+            wrote a Python script that utilized Yelp’s API to identify and
+            locate all the donut shops in the city of Long Beach. The query
+            returned 200 results under “Best Match,” the default category from
+            the API. According to the Yelp API guidelines, best match “considers
+            multiple input parameters to return the most relevant results.”
+          </p>
+          <p>
+            My script parsed through the review counts, ratings, and pricing
+            information for each business that matched the alias, or our
+            category of choice, “Donut”. Because I initially wanted to focus on
+            Long Beach donut shops, the code filtered the results to show only
+            businesses whose coordinates were within the City of Long Beach and
+            had an alias, “donut.” The code returned 43 entries. I noted a small
+            shortcoming in the information Yelp returned — the API may lag on
+            updated information as businesses change hands, fall under, or
+            recently start.
+          </p>
+          <hr class="divider" />
+          <h2 class="section-header">SOLUTION</h2>
+          <p>
+            Armed with new data, I could weave together information with entries
+            such as pricing, ratings and even reviews. The data revealed
+            patterns, some that were expected, and some that brought a unique
+            perspective to the donut scene in Southern California.
+          </p>
+          <div class="donut-image-container">
+            <div>
+              <a
+                href="../images/map.png"
+                data-lightbox="map"
+                data-title="Map of the 43 donut shops in Long Beach as of November 2018,
+              identified using Yelp’s API."
+              >
+                <img src="../images/map.png" />
+              </a>
+              <b
+                ><i
+                  ><p>
+                    Map of the 43 donut shops in Long Beach as of November 2018,
+                    identified using Yelp’s API.
+                  </p></i
+                ></b
+              >
+            </div>
+          </div>
+          <hr class="divider" />
+          <h2 class="section-header">RESULT</h2>
+          <p>
+            Out of the 43 donut shops in the area that we pulled from the Yelp
+            API, 37 were independent and six were chain stores. The data show
+            that independent donut shops in Long Beach are much better received
+            by Yelp users than franchise locations of chain stores like Krispy
+            Kreme and Winchell’s. Average ratings for the chain restaurants was
+            a 2.6, compared to 4.2 for non-chain restaurants. In fact, only
+            three of the independent shops scored lower (3.0) than the
+            highest-scoring chain restaurant (3.5). Although the average rating
+            count for the chain restaurants were higher (72.4 vs 51.3), the the
+            top two independent donut shops had more reviews than all of the
+            chain stores combined (707 vs 362).
+          </p>
+          <div class="donut-image-container">
+            <div>
+              <a
+                href="../images/chart.png"
+                data-lightbox="chart"
+                data-title="Chart depicting the range of ratings vs review count in the
+              43 Long Beach donut shops. Yelp uses a one-star to five-star
+              rating system."
+              >
+                <img src="../images/chart.png" />
+              </a>
+              <b
+                ><i
+                  ><p>
+                    Chart depicting the range of ratings vs review count in the
+                    43 Long Beach donut shops. Yelp uses a one-star to five-star
+                    rating system.
+                  </p></i
+                ></b
+              >
+            </div>
+          </div>
+          <hr class="divider" />
+          <h2 class="section-header">CONCLUSION</h2>
+          <p>
+            The significance of the donut shop, which gave livelihoods to
+            thousands of Cambodian refugees, can be seen in the pervasive
+            numbers of donut shops in Long Beach, an area where many Cambodian
+            families made their homes. Yelp’s API helped us with a
+            proof-of-concept and is the starting point for Pink Box Stories to
+            get a data-driven picture of Cambodian donuts shops in California.
+          </p>
+          <p>
+            You can read the full article
+            <a
+              href="https://medium.com/pinkboxstories/from-white-boxes-to-pink-fb643d10f416"
+              target="_blank"
+              >here</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+      integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../lightbox/js/lightbox-plus-jquery.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

@@ -1,4 +1,5 @@
 /* Side Navbar styling */
+
 /* 
 @media (max-width: 768px) {
     #sidebar {
@@ -224,6 +225,7 @@ a:link, a:visited {
     color: grey;
 }
 
+
 /* About page */
 
 #profile-picture {
@@ -232,6 +234,7 @@ a:link, a:visited {
     margin: 40px auto;
     border-radius: 5px;
 }
+
 
 /* Yield page */
 
@@ -261,6 +264,7 @@ a:link, a:visited {
     align-items: center;
 }
 
+
 /* Donut page */
 
 .donut-image-container {
@@ -277,6 +281,7 @@ a:link, a:visited {
 .donut-image-container img {
     width: 100%;
 }
+
 
 /* Bullet Journal page */
 
@@ -369,6 +374,7 @@ a:link, a:visited {
     margin: 10px 0px;
 }
 
+
 /* Contact page */
 .contact-form {
     width: 80%;
@@ -391,4 +397,131 @@ a:link, a:visited {
 .social-media-icons a {
     margin: 0px 5px;
     color: #22A8A8;
+}
+
+
+/* Nona Lim page */
+
+.cold-noodle-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cold-noodle-container div{
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.cold-noodle-container div a{
+    width: 100%;
+}
+
+.cold-noodle-container div a img{
+    width: 100%;
+}
+
+.storyboard-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.storyboard-container div{
+    width: 30%;
+    border: 1px solid #22A8A8;
+    margin-bottom: 20px;
+}
+
+.storyboard-container div a{
+    width: 100%;
+}
+
+.storyboard-container div a img{
+    width: 100%;
+}
+
+.web-design-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.web-design-container div{
+    width: 60%;
+    border: 1px solid #22A8A8;
+    margin: 10px auto;
+}
+
+.web-design-container div a{
+    width: 100%;
+}
+
+.web-design-container div a img{
+    width: 100%;
+}
+
+/* Dream Diaries page */
+
+.dream-cover-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dream-cover-container div{
+    width: 50%;
+}
+
+.dream-cover-container div a{
+    width: 100%;
+}
+
+.dream-cover-container div a img{
+    width: 100%;
+}
+
+.dream-brainstorm-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.dream-brainstorm-container div{
+    width: 30%;
+}
+
+.dream-brainstorm-container div a{
+    width: 100%;
+}
+
+.dream-brainstorm-container div a img{
+    width: 100%;
+}
+
+.premier-pro-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.premier-pro-container div{
+    width: 80%;
+}
+
+.premier-pro-container div a{
+    width: 100%;
+}
+
+.premier-pro-container div a img{
+    width: 100%;
 }
